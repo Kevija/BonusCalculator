@@ -10,7 +10,6 @@ import scala.io.StdIn.readLine
     //Bonus is years worked over 2 years * 15% of monthly wage
     //so 5 years worked, 1000 Euros wage would give 450 Euro bonus (3 years * 150)
 
-
     println("Christmas bonus calculator")
 
     val personsName = readLine("Please enter your name:")
@@ -20,8 +19,7 @@ import scala.io.StdIn.readLine
     if (workingYears > 2) {
       val bonusMoney = (monthlyWage * 15 / 100) * (workingYears-2)
       println(s"Your monthly wage in euros: $monthlyWage, your Christmas bonus: $bonusMoney")
-    }
-    else {
+    } else {
       println(s"$personsName, sorry, this year you have no bonus :(")
     }
   }
